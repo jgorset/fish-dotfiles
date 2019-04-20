@@ -10,3 +10,5 @@ yourself the trouble:
 
     $ homesick clone jgorset/fish-dotfiles
     $ homesick symlink fish-dotfiles
+
+Then run `fisher` to install plugins. That's it! You're all done.
