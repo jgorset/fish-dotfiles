@@ -19,3 +19,6 @@ alias gc "git commit"
 # Use colorls instead of ls
 alias ols "ls"
 alias ls "colorls"
+
+# Go
+set PATH ~/go/bin $PATH
