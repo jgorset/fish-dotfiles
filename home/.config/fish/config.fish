@@ -20,12 +20,17 @@ alias gc "git commit"
 alias ols "ls"
 alias ls "colorls"
 
+# Configure spacefish
+set SPACEFISH_JOBS_SYMBOL \uf141
+set SPACEFISH_JOBS_COLOR yellow
+set SPACEFISH_JOBS_AMOUNT_THRESHOLD 100
+
 # Go
 set PATH ~/go/bin $PATH
 
 # Configure colors
 set fish_color_normal white
-set fish_color_command blue --bold
+set fish_color_command blue
 set fish_color_autosuggestion white
 set fish_color_param cyan
 set fish_color_error red
