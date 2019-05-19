@@ -15,6 +15,7 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 # Git aliases
 alias gs "git status"
 alias gc "git commit"
+alias ga "git add"
 
 # Use colorls instead of ls
 alias ols "ls"
