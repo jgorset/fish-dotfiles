@@ -8,7 +8,7 @@ function fish_prompt
 
   set_color -b black
   echo -n $symbol_path ' '
-  echo -n (pwd)
+  echo -n (pwd | sed "s|^$HOME|~|")
   echo -n ' '
   set_color normal
 
