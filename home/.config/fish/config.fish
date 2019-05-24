@@ -5,7 +5,7 @@ if status --is-interactive
 end
 
 # Don't greet
-set fish_greeting
+set fish_greeting "  - Hello" (whoami)
 
 # Configure FZF
 export FZF_DEFAULT_OPS="--extended"

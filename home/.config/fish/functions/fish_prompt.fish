@@ -1,4 +1,5 @@
 function fish_prompt
+  echo ' '
   set -l symbol_path \uf815
   set -l symbol_chevron_right \uf460
 
