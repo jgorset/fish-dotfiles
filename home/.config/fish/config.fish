@@ -12,10 +12,11 @@ export FZF_DEFAULT_OPS="--extended"
 export FZF_DEFAULT_COMMAND="fd --type f"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
-# Git aliases
+# Aliases
 alias gs "git status"
 alias gc "git commit"
 alias ga "git add"
+alias vi "nvim"
 
 # Use colorls instead of ls
 alias ols "ls"
@@ -28,6 +29,9 @@ set SPACEFISH_JOBS_AMOUNT_THRESHOLD 100
 
 # Go
 set PATH ~/go/bin $PATH
+
+# Rust
+set PATH ~/.cargo/bin $PATH
 
 # Configure colors
 set fish_color_normal white
