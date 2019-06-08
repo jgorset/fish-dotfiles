@@ -1,18 +1,22 @@
 function fish_prompt
   echo ' '
-  set -l symbol_path \uf815
+  set -l symbol_path \uf74a
   set -l symbol_chevron_right \uf460
 
   set -l git_status
   set -l is_behind
   set -l is_ahead
 
-  set_color -b black
-  echo -n $symbol_path ' '
+  set_color -b magenta
+  set_color black
+  echo -n ' '$symbol_path ' '
   echo -n (pwd | sed "s|^$HOME|~|")
   echo -n ' '
+  set_color -b normal
+  set_color magenta
+  echo -n \ue0b0
   set_color normal
-
+  
   echo -n ' '
 
   set -l index (git status --porcelain -b 2>/dev/null)
@@ -53,10 +57,13 @@ function fish_prompt
 
     set_color black
     if test "$git_status"
-      set_color -b red
+      set background_color red
     else
-      set_color -b green
+      set background_color green
     end
+
+    set_color -b $background_color
+    echo -n \ue0b0
 
     set -l git_branch (git rev-parse --abbrev-ref HEAD 2>/dev/null)
 
